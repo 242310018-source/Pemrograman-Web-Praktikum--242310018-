@@ -1,0 +1,15 @@
+/* File: css/style.css */
+body {
+    background-color: #f4f4f4; /* Warna abu muda biar ga silau */
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+table {
+    background-color: white;
+    width: 100%;
+}
