@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perhitungan Faktorial dan Deret</title>
+</head>
+<body>
+
+<h2>PERHITUNGAN FAKTORIAL dan DERET</h2>
+
+<form>
+    N: <input type="number" id="n"><br><br>
+
+    <button type="button" onclick="hitung()">Submit</button>
+    <button type="reset">Reset</button><br><br>
+
+    Faktorial: <input type="text" id="faktorial" readonly><br><br>
+    Jumlah Deret: <input type="text" id="jumlah" readonly>
+</form>
+
+<script>
+function hitung() {
+    let n = parseInt(document.getElementById("n").value);
+
+    let faktorial = 1;
+    let jumlah = 0;
+
+    for (let i = 1; i <= n; i++) {
+        faktorial *= i;     // n!
+        jumlah += i;        // 1 + 2 + ... + n
+    }
+
+    document.getElementById("faktorial").value = faktorial;
+    document.getElementById("jumlah").value = jumlah;
+}
+</script>
+
+</body>
+</html>
